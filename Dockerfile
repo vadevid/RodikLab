@@ -1,11 +1,11 @@
 FROM node:latest
 
-WORKDIR /app
-
-COPY package.json main.js ./
+COPY package.json .
 
 RUN npm i
 
+COPY main.js .
+
 EXPOSE 3000
 
-CMD["node", "main.js"]
+CMD node main.js
