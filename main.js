@@ -5,7 +5,7 @@ const port = 3000
 const server = http.createServer((req, res) => {
     res.statusCode = 200
     res.setHeader('Content-Type' , 'text/plan')
-    res.end('Hello world!\nВетка branch2')
+    res.end('Hello world!\nBranch branch2')
 })
 
 server.listen(port, () => {
